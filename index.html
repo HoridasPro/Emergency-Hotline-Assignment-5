@@ -12,7 +12,7 @@
     />
     <!-- Tailwind config js link -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- Google Font -->
+    <!-- Google Font link-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -31,7 +31,7 @@
     <link rel="stylesheet" href="./styless/style.css" />
   </head>
   <body class="bg-[#F5FFF6]">
-    <header class="mt-4 bg-white">
+    <section class="bg-white">
       <nav
         class="max-w-[1240px] mx-auto flex items-center justify-between p-5 rounded-lg flex-col md:flex-row"
       >
@@ -45,7 +45,7 @@
           <div
             class="flex items-center justify-center w-[105px] h-[50px] bg-[#41ff6b1a] p-2 rounded-[50px]"
           >
-            <span class="font-bold text-black text-lg">0</span>
+            <span id="heart_icon_value" class="font-bold text-black text-lg">0</span>
             <img
               class="w-[30px] h-[30px] ml-4"
               src="./images/heart.png"
@@ -70,28 +70,32 @@
           </button>
         </div>
       </nav>
-    </header>
-    <!-- Section-1 -->
-    <section
-      class="bg-gradient-to-r from-[#013122] via-[#006747] to-[#013223] mt-5"
-    >
-      <div class="text-center p-[20px]">
-        <img class="w-[92px] h-[92px] mx-auto" src="./images/logo.png" alt="" />
-        <h1 class="text-white text-[40px] font-bold font-hind">
-          Emergency Service Directory
-        </h1>
-        <p class="text-white text-[20px] font-semibold font-hind">
-          Government Emergency Services at Your Fingertip A Project by
-          Government of the People’s Republic of Bangladesh
-        </p>
-      </div>
+      <!-- Section-1 -->
+      <section
+        class="bg-gradient-to-r from-[#013122] via-[#006747] to-[#013223] mt-5"
+      >
+        <div class="text-center p-[20px]">
+          <img
+            class="w-[92px] h-[92px] mx-auto"
+            src="./images/logo.png"
+            alt=""
+          />
+          <h1 class="text-white text-[40px] font-bold">
+            Emergency Service Directory
+          </h1>
+          <p class="text-white text-[20px] font-semibold">
+            Government Emergency Services at Your Fingertip A Project by
+            Government of the People’s Republic of Bangladesh
+          </p>
+        </div>
+      </section>
     </section>
     <!-- section no 2 -->
     <main>
       <section
-        class="grid grid-cols-12 max-w-[1250px] mx-auto gap-4 mb-5 mt-10"
+        class="grid grid-cols-12 max-w-[1250px] mx-auto gap-4 pb-10 mt-10"
       >
-        <div class="col-span-9 grid md:grid-cols-3 gap-4 grid-cols-1">
+        <div class="col-span-9 grid grid-cols-3 gap-4">
           <!-- cart-1 -->
           <div
             class="bg-white p-[10px] rounded-xl shadow-[0px_2px_3px_0px_#00000026]"
@@ -108,7 +112,7 @@
               </div>
               <span class="w-[24px] h-[24px]"
                 ><i
-                  class="fa-regular fa-heart w-[20px] h-[18px] text-[#5c5c5c]"
+                  class="heart_icon fa-regular fa-heart w-[20px] h-[18px] text-[#5c5c5c]"
                 ></i
               ></span>
             </div>
@@ -155,7 +159,7 @@
               </div>
               <span class="w-[24px] h-[24px]"
                 ><i
-                  class="fa-regular fa-heart w-[20px] h-[18px] text-[#5c5c5c]"
+                  class="heart_icon fa-regular fa-heart w-[20px] h-[18px] text-[#5c5c5c]"
                 ></i
               ></span>
             </div>
@@ -168,7 +172,7 @@
             <div class="mt-2">
               <span class="text-[#111111] font-bold text-[22px]">999</span>
               <p
-                class="w-[50px] h-[35px] bg-[#F2F2F2] flex items-center justify-center font-semibold text-[#5C5C5C] rounded-xl"
+                class="w-[60px] h-[35px] bg-[#F2F2F2] flex items-center justify-center font-semibold text-[#5C5C5C] rounded-xl"
               >
                 Police
               </p>
@@ -202,7 +206,7 @@
               </div>
               <span class="w-[24px] h-[24px]"
                 ><i
-                  class="fa-regular fa-heart w-[20px] h-[18px] text-[#5c5c5c]"
+                  class="heart_icon fa-regular fa-heart w-[20px] h-[18px] text-[#5c5c5c]"
                 ></i
               ></span>
             </div>
@@ -215,7 +219,7 @@
             <div class="mt-2">
               <span class="text-[#111111] font-bold text-[22px]">999</span>
               <p
-                class="w-[50px] h-[35px] bg-[#F2F2F2] flex items-center justify-center font-semibold text-[#5C5C5C] rounded-xl"
+                class="w-[60px] h-[35px] bg-[#F2F2F2] flex items-center justify-center font-semibold text-[#5C5C5C] rounded-xl"
               >
                 Fire
               </p>
@@ -249,7 +253,7 @@
               </div>
               <span class="w-[24px] h-[24px]"
                 ><i
-                  class="fa-regular fa-heart w-[20px] h-[18px] text-[#5c5c5c]"
+                  class="heart_icon fa-regular fa-heart w-[20px] h-[18px] text-[#5c5c5c]"
                 ></i
               ></span>
             </div>
@@ -264,7 +268,7 @@
                 >1994-999999</span
               >
               <p
-                class="w-[50px] h-[35px] bg-[#F2F2F2] flex items-center justify-center font-semibold text-[#5C5C5C] rounded-xl"
+                class="w-[70px] h-[35px] bg-[#F2F2F2] flex items-center justify-center font-semibold text-[#5C5C5C] rounded-xl"
               >
                 Health
               </p>
@@ -298,7 +302,7 @@
               </div>
               <span class="w-[24px] h-[24px]"
                 ><i
-                  class="fa-regular fa-heart w-[20px] h-[18px] text-[#5c5c5c]"
+                  class="heart_icon fa-regular fa-heart w-[20px] h-[18px] text-[#5c5c5c]"
                 ></i
               ></span>
             </div>
@@ -311,7 +315,7 @@
             <div class="mt-2">
               <span class="text-[#111111] font-bold text-[22px]">109</span>
               <p
-                class="w-[50px] h-[35px] bg-[#F2F2F2] flex items-center justify-center font-semibold text-[#5C5C5C] rounded-xl"
+                class="w-[60px] h-[35px] bg-[#F2F2F2] flex items-center justify-center font-semibold text-[#5C5C5C] rounded-xl"
               >
                 Help
               </p>
@@ -345,7 +349,7 @@
               </div>
               <span class="w-[24px] h-[24px]"
                 ><i
-                  class="fa-regular fa-heart w-[20px] h-[18px] text-[#5c5c5c]"
+                  class="heart_icon fa-regular fa-heart w-[20px] h-[18px] text-[#5c5c5c]"
                 ></i
               ></span>
             </div>
@@ -358,7 +362,7 @@
             <div class="mt-2">
               <span class="text-[#111111] font-bold text-[22px]">106</span>
               <p
-                class="w-[50px] h-[35px] bg-[#F2F2F2] flex items-center justify-center font-semibold text-[#5C5C5C] rounded-xl"
+                class="w-[60px] h-[35px] bg-[#F2F2F2] flex items-center justify-center font-semibold text-[#5C5C5C] rounded-xl"
               >
                 Govt.
               </p>
@@ -392,7 +396,7 @@
               </div>
               <span class="w-[24px] h-[24px]"
                 ><i
-                  class="fa-regular fa-heart w-[20px] h-[18px] text-[#5c5c5c]"
+                  class="heart_icon fa-regular fa-heart w-[20px] h-[18px] text-[#5c5c5c]"
                 ></i
               ></span>
             </div>
@@ -405,7 +409,7 @@
             <div class="mt-2">
               <span class="text-[#111111] font-bold text-[22px]">16216</span>
               <p
-                class="w-[50px] h-[35px] bg-[#F2F2F2] flex items-center justify-center font-semibold text-[#5C5C5C] rounded-xl"
+                class="w-[90px] h-[35px] bg-[#F2F2F2] flex items-center justify-center font-semibold text-[#5C5C5C] rounded-xl"
               >
                 Electricity
               </p>
@@ -439,7 +443,7 @@
               </div>
               <span class="w-[24px] h-[24px]"
                 ><i
-                  class="fa-regular fa-heart w-[20px] h-[18px] text-[#5c5c5c]"
+                  class="heart_icon fa-regular fa-heart w-[20px] h-[18px] text-[#5c5c5c]"
                 ></i
               ></span>
             </div>
@@ -452,7 +456,7 @@
             <div class="mt-2">
               <span class="text-[#111111] font-bold text-[22px]">16445</span>
               <p
-                class="w-[50px] h-[35px] bg-[#F2F2F2] flex items-center justify-center font-semibold text-[#5C5C5C] rounded-xl"
+                class="w-[60px] h-[35px] bg-[#F2F2F2] flex items-center justify-center font-semibold text-[#5C5C5C] rounded-xl"
               >
                 NGO
               </p>
@@ -486,7 +490,7 @@
               </div>
               <span class="w-[24px] h-[24px]"
                 ><i
-                  class="fa-regular fa-heart w-[20px] h-[18px] text-[#5c5c5c]"
+                  class="heart_icon fa-regular fa-heart w-[20px] h-[18px] text-[#5c5c5c]"
                 ></i
               ></span>
             </div>
@@ -499,7 +503,7 @@
             <div class="mt-2">
               <span class="text-[#111111] font-bold text-[22px]">163</span>
               <p
-                class="w-[50px] h-[35px] bg-[#F2F2F2] flex items-center justify-center font-semibold text-[#5C5C5C] rounded-xl"
+                class="w-[60px] h-[35px] bg-[#F2F2F2] flex items-center justify-center font-semibold text-[#5C5C5C] rounded-xl"
               >
                 Travel
               </p>
@@ -519,7 +523,7 @@
           </div>
         </div>
         <aside
-          class="col-span-3 p-3 bg-white shadow-[0px_2px_3px_0px_#00000026]"
+          class="col-span-3 p-3 bg-white shadow-[0px_2px_3px_0px_#00000026] rounded-xl"
         >
           <div class="flex justify-between items-center">
             <div class="flex justify-center items-center">
@@ -591,5 +595,6 @@
         </aside>
       </section>
     </main>
+    <script src="./script.js"></script>
   </body>
 </html>
