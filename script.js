@@ -61,7 +61,6 @@ document.getElementById("clear_button").addEventListener("click", function () {
 const copyBtns = document.querySelectorAll(".copy_button");
 for (const copyBtn of copyBtns) {
   copyBtn.addEventListener("click", function () {
-    
     // For the copy count
     const getCopyCountValues = document.getElementById("copy_value");
     const parseIntCopyValue = parseInt(getCopyCountValues.innerText);
