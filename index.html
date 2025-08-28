@@ -69,7 +69,7 @@
           <button
             class="flex items-center justify-center w-[105px] h-[45px] bg-[#00A63E] rounded-[50px]"
           >
-            <span class="font-bold text-lg text-white">0</span>
+            <span id="copy_value" class="font-bold text-lg text-white">0</span>
             <p class="font-semibold text-lg text-white ml-2">Copy</p>
           </button>
         </div>
@@ -136,7 +136,7 @@
             </div>
             <div class="bg-white flex justify-center mt-4">
               <button
-                class="w-[180px] h-[40px] border-2 border-[#d4d6d5] rounded-lg text-[#5C5C5C] font-normal cursor-pointer"
+                class="copy_button w-[180px] h-[40px] border-2 border-[#d4d6d5] rounded-lg text-[#5C5C5C] font-normal cursor-pointer"
               >
                 <i class="fa-regular fa-copy mr-2"></i>Copy
               </button>
@@ -183,7 +183,7 @@
             </div>
             <div class="bg-white flex justify-center mt-4">
               <button
-                class="w-[180px] h-[40px] border-2 border-[#d4d6d5] rounded-lg text-[#5C5C5C] font-normal cursor-pointer"
+                class="copy_button w-[180px] h-[40px] border-2 border-[#d4d6d5] rounded-lg text-[#5C5C5C] font-normal cursor-pointer"
               >
                 <i class="fa-regular fa-copy mr-2"></i>Copy
               </button>
@@ -230,7 +230,7 @@
             </div>
             <div class="bg-white flex justify-center mt-4">
               <button
-                class="w-[180px] h-[40px] border-2 border-[#d4d6d5] rounded-lg text-[#5C5C5C] font-normal cursor-pointer"
+                class="copy_button w-[180px] h-[40px] border-2 border-[#d4d6d5] rounded-lg text-[#5C5C5C] font-normal cursor-pointer"
               >
                 <i class="fa-regular fa-copy mr-2"></i>Copy
               </button>
@@ -279,7 +279,7 @@
             </div>
             <div class="bg-white flex justify-center mt-4">
               <button
-                class="w-[180px] h-[40px] border-2 border-[#d4d6d5] rounded-lg text-[#5C5C5C] font-normal cursor-pointer"
+                class="copy_button w-[180px] h-[40px] border-2 border-[#d4d6d5] rounded-lg text-[#5C5C5C] font-normal cursor-pointer"
               >
                 <i class="fa-regular fa-copy mr-2"></i>Copy
               </button>
@@ -326,7 +326,7 @@
             </div>
             <div class="bg-white flex justify-center mt-4">
               <button
-                class="w-[180px] h-[40px] border-2 border-[#d4d6d5] rounded-lg text-[#5C5C5C] font-normal cursor-pointer"
+                class="copy_button w-[180px] h-[40px] border-2 border-[#d4d6d5] rounded-lg text-[#5C5C5C] font-normal cursor-pointer"
               >
                 <i class="fa-regular fa-copy mr-2"></i>Copy
               </button>
@@ -373,7 +373,7 @@
             </div>
             <div class="bg-white flex justify-center mt-4">
               <button
-                class="w-[180px] h-[40px] border-2 border-[#d4d6d5] rounded-lg text-[#5C5C5C] font-normal cursor-pointer"
+                class="copy_button w-[180px] h-[40px] border-2 border-[#d4d6d5] rounded-lg text-[#5C5C5C] font-normal cursor-pointer"
               >
                 <i class="fa-regular fa-copy mr-2"></i>Copy
               </button>
@@ -420,7 +420,7 @@
             </div>
             <div class="bg-white flex justify-center mt-4">
               <button
-                class="w-[180px] h-[40px] border-2 border-[#d4d6d5] rounded-lg text-[#5C5C5C] font-normal cursor-pointer"
+                class="copy_button w-[180px] h-[40px] border-2 border-[#d4d6d5] rounded-lg text-[#5C5C5C] font-normal cursor-pointer"
               >
                 <i class="fa-regular fa-copy mr-2"></i>Copy
               </button>
@@ -467,7 +467,7 @@
             </div>
             <div class="bg-white flex justify-center mt-4">
               <button
-                class="w-[180px] h-[40px] border-2 border-[#d4d6d5] rounded-lg text-[#5C5C5C] font-normal cursor-pointer"
+                class="copy_button w-[180px] h-[40px] border-2 border-[#d4d6d5] rounded-lg text-[#5C5C5C] font-normal cursor-pointer"
               >
                 <i class="fa-regular fa-copy mr-2"></i>Copy
               </button>
@@ -514,7 +514,7 @@
             </div>
             <div class="bg-white flex justify-center mt-4">
               <button
-                class="w-[180px] h-[40px] border-2 border-[#d4d6d5] rounded-lg text-[#5C5C5C] font-normal cursor-pointer"
+                class="copy_button w-[180px] h-[40px] border-2 border-[#d4d6d5] rounded-lg text-[#5C5C5C] font-normal cursor-pointer"
               >
                 <i class="fa-regular fa-copy mr-2"></i>Copy
               </button>
@@ -534,14 +534,15 @@
               <i class="fa-regular fa-clock"></i>
               <p class="ml-2">Call History</p>
             </div>
-            <button id="clear_button"
+            <button
+              id="clear_button"
               class="bg-[#00A63E] w-[100px] h-[40px] rounded-lg ml-3 font-semibold text-white cursor-pointer"
             >
               Clear
             </button>
           </div>
           <!-- for transaction -->
-         <div id="transaction_container"></div>
+          <div id="transaction_container"></div>
         </aside>
       </section>
     </main>
