@@ -8,6 +8,7 @@ for (const heartIcon of heartIcons) {
     heartIconValues.innerText = countValue;
   });
 }
+
 // For the call button
 const callButtons = document.getElementsByClassName("call_btn");
 for (const callButton of callButtons) {
@@ -19,9 +20,9 @@ for (const callButton of callButtons) {
     const transactionContainer = document.getElementById(
       "transaction_container"
     );
+
     // Create New Div
     const createDiv = document.createElement("div");
-
     createDiv.innerHTML = ` <div
     class="flex items-center justify-between mt-5 bg-[#fafafa] p-2 rounded-lg"
     >
@@ -37,13 +38,12 @@ for (const callButton of callButtons) {
     transactionContainer.appendChild(createDiv);
 
     // For the Reduced coin
-
     const coinValue = parseInt(document.getElementById("coin_value").innerText);
     let coinValues = 0;
     if (coinValue >= 20) {
       coinValues = coinValue - 20;
       document.getElementById("coin_value").innerText = coinValues;
-      alert(`📞${emergencyNumberTitle} ${othersNumber}...`);
+      alert(`📞Calling ${emergencyNumberTitle} ${othersNumber}...`);
       return true;
     } else {
       createDiv.innerHTML = "";
@@ -52,12 +52,13 @@ for (const callButton of callButtons) {
     }
   });
 }
+
 // For the clear button
 document.getElementById("clear_button").addEventListener("click", function () {
   document.getElementById("transaction_container").innerHTML = "";
 });
 
-// For copy button
+// For the copy button
 const copyBtns = document.querySelectorAll(".copy_button");
 for (const copyBtn of copyBtns) {
   copyBtn.addEventListener("click", function () {
@@ -70,7 +71,7 @@ for (const copyBtn of copyBtns) {
     const getInnerValue =
       copyBtn.parentNode.parentNode.childNodes[5].childNodes[1].innerText;
     navigator.clipboard.writeText(getInnerValue).then(() => {
-      alert(`✔ Copy kora hoye : ${getInnerValue}`);
+      alert(`✔ Number Copied ${getInnerValue}`);
       return true;
     });
   });
