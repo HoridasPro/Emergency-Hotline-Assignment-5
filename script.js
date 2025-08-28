@@ -21,17 +21,30 @@ for (const callButton of callButtons) {
     );
     const createDiv = document.createElement("div");
 
-    createDiv.innerHTML = `<div
-            class="flex items-center justify-between mt-5 bg-[#fafafa] p-2 rounded-lg"
-          >
+    createDiv.innerHTML = ` <div
+    class="flex items-center justify-between mt-5 bg-[#fafafa] p-2 rounded-lg"
+    >
             <div>
-              <h1 class="font-semibold text-[16px] text-[#111111]">
-                ${emergencyNumberTitle}
-              </h1>
-              <p class="text-[#5C5C5C] font-normal text-[16px]">${othersNumber}</p>
+            <h1 class="font-semibold text-[16px] text-[#111111]">
+            ${emergencyNumberTitle}
+            </h1>
+            <p class="text-[#5C5C5C] font-normal text-[16px]">${othersNumber}</p>
             </div>
             <span class="text-[16px] font-normal">${new Date().toLocaleTimeString()}</span>
-          </div>`;
+            </div>
+            `;
     transactionContainer.appendChild(createDiv);
+
+    const coinValue = parseInt(document.getElementById("coin_value").innerText);
+      let coinValues=0
+    if (coinValue >= 20) {
+      coinValues = coinValue - 20;
+      document.getElementById("coin_value").innerText = coinValues;
+      alert(`${emergencyNumberTitle},${othersNumber}`);
+      return true;
+    } else {
+      alert("You have no coin");
+      return false;
+    }
   });
 }
