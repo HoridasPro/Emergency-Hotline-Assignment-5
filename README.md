@@ -1,1 +1,5 @@
-ffh
+1. getElementById : We can catch only one element because id is always unique. If this id does not stay return the null. We can catch the one element directly and can change the text or style in the innerText element.
+getElementsByClassName: We can give the same class name and catch the some elements. Return HTMLCollection it's not array but to like array.Directly does not work forEach but work for loop.
+querySelector: For catching the first element by css selector. We can use it. Id, calss, tagName anything use the css selector.
+querySelectorAll: Can catch the all matching elements. It returns NodeList. It is very benefit like HTMLCollection because can use for loop and forEach.
+2. First, for create a new element take a method which is createElement(tagName). It will not show in the web page until we can use DOM. It just store in the memory.Now, add the content in the creating in the new element.So the element already created. So right now insert this new element in the any element by use DOM. Suppose. will insert this new element in body tag by use document.body.appendChild(new tagName). So, finaly will show the new element in the web page.
